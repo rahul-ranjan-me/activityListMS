@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+body{
+    background-color: #ccc;
+    color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container{
+    width:600px;
+    margin:20px auto;
+    background-color: #fff;
+    padding:20px;
+}
+
+.activity-list{
+    list-style-type: none;
+}
+
+.activity-list li{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.activity-list li .person{
+    flex: .1
+}
+
+.activity-list li:last-child{
+    margin-bottom: 0;
+}
+
+.activity-list .activity-details{
+    flex: 1;
+    flex-direction: column;
+}
+
+.activity-list .activity-details .activity-image{
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    width: 30px;
+}
+
+.activity-list .activity-details date{
+    float: right;
+    margin-bottom: -10px;
+}
+
+.activity-list .activity-details p.prop{
+    color: #ccc;
+    margin: 6px 0 10px;
+}

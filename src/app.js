@@ -81,9 +81,9 @@
       }
   
       createItem(item){
-        const { title, byUser, type, activityId, generatedAt, team, channel, message } = item
+        const { title, byUser, type, generatedAt, team, channel, message } = item
             , { imageDataUri } = byUser
-        return `<li class="activity" id=${activityId}>
+        return `<li class="activity">
                   <div class="person">
                       <img src=${imageDataUri} alt="Person+${imageDataUri}" width="30" />
                   </div>
